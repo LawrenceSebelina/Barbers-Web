@@ -1,14 +1,13 @@
-
 const preloader = document.querySelector("[data-preloader]");
 
-window.addEventListener("load", () => {
-    preloader.classList.add("remove");
+window.addEventListener("DOMContentLoaded", function() {
+    preloader.classList.add("loaded");
+    document.body.classList.add("loaded");
 });
 
-
 /**
- * add event on multiple elements
- */
+* Add event on multiple elements
+*/
 
 const addEventOnElements = function (elements, eventType, callback) {
     for (let i = 0, len = elements.length; i < len; i++) {
@@ -17,8 +16,8 @@ const addEventOnElements = function (elements, eventType, callback) {
 }
 
 /**
- * Navbar toggler for mobile
- */
+* Navbar toggler for mobile
+*/
 
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
@@ -33,8 +32,8 @@ const toggleNav = function () {
 addEventOnElements(navTogglers, "click", toggleNav);
 
 /**
- * Header
- */
+* Header
+*/
 
 const header = document.querySelector("[data-header]");
 
@@ -44,8 +43,8 @@ window.addEventListener("scroll", function () {
 
 
 /**
- * Swiper
- */
+* Swiper
+*/
 
 var swiper = new Swiper(".mySwiper", {
     pagination: {
@@ -58,7 +57,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 /**
- * Animate On Scroll
- */
+* Animate On Scroll
+*/
 
 AOS.init();
