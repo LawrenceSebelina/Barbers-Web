@@ -48,17 +48,20 @@
         Custom CSS 
     -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- 
+        - Preload images
+    -->
+    <link rel="preload" as="image" href="assets/images/favicon.svg">
 </head>
 
 <body>
     <div class="preloader" data-preloader>
-        <div class="circle">
-            <img src="assets/images/favicon.svg" width="20" height="20" alt="" class="img">
-        </div>
-        <h1>Loading...</h1>
+        <div class="circle"></div>
+        <img src="assets/images/favicon.svg" width="20" height="20" alt="" class="img">
     </div>
 
-    <header class="header active" data-header>
+    <header class="header" data-header>
         <div class="container">
             <div class="header-top clearfix">
                 <div class="header-top-email float-lg-start">
@@ -146,7 +149,7 @@
                 data-bs-target="#navbar-list" data-bs-smooth-scroll="true" tabindex="0" id="home">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6" data-aos="fade-right" data-aos-duration="600">
+                        <div class="col-md-6" data-aos="fade-right" data-aos-offset="160" data-aos-duration="600">
                             <h1 class="mb-0">
                                 Quality Barber Shop
                             </h1>
@@ -176,7 +179,7 @@
                 data-bs-smooth-scroll="true" tabindex="0" id="about-us">
                 <div class="container">
                     <div class="row g-5">
-                        <div class="col-md-6 mt-0" data-aos="fade-right" data-aos-duration="600">
+                        <div class="col-md-6 mt-0" data-aos="fade-right" data-aos-offset="160" data-aos-duration="600">
                             <div class="about-title">
                                 <p class="mb-0">The Unique Story</p>
                                 <h2 class="mb-0">50 Years of Experience</h2>
@@ -201,7 +204,7 @@
                             </a>
                         </div>
 
-                        <div class="col-md-6 mt-0" data-aos="flip-up" data-aos-duration="600">
+                        <div class="col-md-6 mt-0" data-aos="flip-up" data-aos-offset="160" data-aos-duration="600">
                             <figure class="about-banner">
                                 <img src="assets/images/about-img.jpg" width="631" height="735" alt="about banner"
                                     class="w-100">
@@ -220,7 +223,8 @@
                     </div>
 
                     <div class="row g-5">
-                        <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-duration="600">
+                        <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-offset="160"
+                            data-aos-duration="600">
                             <div class="services-card">
                                 <img src="assets/images/services-img-1.jpg" style="width: 100%;" alt="services">
 
@@ -239,7 +243,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-duration="870">
+                        <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-offset="160"
+                            data-aos-duration="870">
                             <div class="services-card">
                                 <img src="assets/images/services-img-2.jpg" style="width: 100%;" alt="services">
 
@@ -258,7 +263,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-duration="800">
+                        <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-offset="160"
+                            data-aos-duration="800">
                             <div class="services-card">
                                 <img src="assets/images/services-img-3.jpg" style="width: 100%;" alt="services">
 
@@ -286,7 +292,7 @@
                 id="testimonials">
                 <div class="container">
                     <div class="row g-5">
-                        <div class="col-md-6 mt-0" data-aos="fade-right" data-aos-duration="600">
+                        <div class="col-md-6 mt-0" data-aos="fade-right" data-aos-offset="160" data-aos-duration="600">
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -375,7 +381,8 @@
                     </div>
 
                     <div class="row g-5">
-                        <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-duration="600">
+                        <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-offset="160"
+                            data-aos-duration="600">
                             <div class="teams-card">
                                 <img src="assets/images/teams-img-1.jpg" style="width: 100%;" alt="teams">
 
@@ -389,7 +396,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-duration="700">
+                        <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-offset="160"
+                            data-aos-duration="700">
                             <div class="teams-card">
                                 <img src="assets/images/teams-img-2.jpg" style="width: 100%;" alt="teams">
 
@@ -403,7 +411,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-duration="800">
+                        <div class="col-md-6 col-lg-4" data-aos="flip-right" data-aos-offset="160"
+                            data-aos-duration="800">
                             <div class="teams-card">
                                 <img src="assets/images/teams-img-3.jpg" style="width: 100%;" alt="teams">
 
@@ -423,7 +432,7 @@
 
             <section class="section cta" style="background-image: url('assets/images/cta-img.jpg');">
                 <div class="container">
-                    <div class="cta-content" data-aos="fade-down" data-aos-duration="600">
+                    <div class="cta-content" data-aos="fade-down" data-aos-offset="160" data-aos-duration="600">
                         <h1 class="mb-0">GET FLAT 25% DISCOUNT!</h1>
                         <p class="mb-0">Get Flat 25% Discount on every sunday of December. Use the promo code
                             below.</p>
@@ -445,7 +454,8 @@
                         <h2 class="mb-0">Make an Appointment</h2>
                     </div>
                     <div class="row g-5 contact-us-content">
-                        <div class="col-md-6 contact-content-left" data-aos="fade-up" data-aos-duration="600">
+                        <div class="col-md-6 contact-content-left" data-aos="fade-up" data-aos-offset="160"
+                            data-aos-duration="600">
                             <p class="mb-0 content-text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Delectus adipisci
                                 recusandae nemo voluptas accusamus quas sunt dignissimos obcaecati quasi sequi qui cum,
@@ -492,7 +502,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 contact-content-right" data-aos="fade-up" data-aos-duration="600">
+                        <div class="col-md-6 contact-content-right" data-aos="fade-up" data-aos-offset="160"
+                            data-aos-duration="600">
                             <p class="mb-0 content-text-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                 Eos ducimus
                                 explicabo tempore ullam veniam amet sapiente nemo in dolores tempora!</p>
@@ -612,7 +623,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footer-bottom text-white">
+                <div class="footer-bottom">
                     <h3 class="mb-0">BARBERS © 2018. All Rights Reserved.</h3>
                 </div>
             </div>
