@@ -1,8 +1,11 @@
+/**
+* Preloader
+*/
+
 const preloader = document.querySelector("[data-preloader]");
 
-window.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("load", function () {
     preloader.classList.add("loaded");
-    document.body.classList.add("loaded");
 });
 
 /**
